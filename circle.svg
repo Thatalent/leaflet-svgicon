@@ -1,0 +1,5 @@
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="404 502 25 40" width="22" height="30">
+      <path d="m0 7.155 c 2.584 .017 4.679 2.122 4.679 4.71 s -2.095
+      4.663 -4.679 4.679 c -2.584 -.017 -4.679 -2.09 -4.679 -4.679 0 -2.588 2.095 -4.693 4.679 -4.71 z"
+      stroke-width="4" stroke-linecap="round" stroke-opacity="0.6" stroke="#faaa44"
+      fill="${color}" /></svg>

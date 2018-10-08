@@ -19,7 +19,7 @@ L.DivIcon.SVGIcon.RhombusIcon = L.DivIcon.SVGIcon.extend({
 
         var d = startPoint + bottomLeftLine + bottomRightLine + topLeftLine
 
-        return d
+        return d;
     }
 })
 
