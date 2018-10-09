@@ -33,37 +33,37 @@ L.DivIcon.SVGIcon = L.DivIcon.extend({
         options.iconSize = L.point(options.iconSize)
 
         //in addition to setting option dependant defaults, Point-based options are converted to Point objects
-        if (!options.circleAnchor) {
+        if (options.circleAnchor == null) {
             options.circleAnchor = L.point(Number(options.iconSize.x)/2, Number(options.iconSize.x)/2)
         }
         else {
             options.circleAnchor = L.point(options.circleAnchor)
         }
-        if (!options.circleColor) {
+        if (options.circleColor == null) {
             options.circleColor = options.color
         }
-        if (!options.circleFillOpacity) {
+        if (options.circleFillOpacity == null) {
             options.circleFillOpacity = options.opacity
         }
-        if (!options.circleOpacity) {
+        if (options.circleOpacity == null) {
             options.circleOpacity = options.opacity
         }
-        if (!options.circleWeight) {
+        if (options.circleWeight == null) {
             options.circleWeight = options.weight
         }
-        if (!options.fillColor) { 
+        if (options.fillColor == null) { 
             options.fillColor = options.color
         }
-        if (!options.fontSize) {
+        if (options.fontSize == null) {
             options.fontSize = Number(options.iconSize.x/4) 
         }
-        if (!options.iconAnchor) {
+        if (options.iconAnchor == null) {
             options.iconAnchor = L.point(Number(options.iconSize.x)/2, Number(options.iconSize.y))
         }
         else {
             options.iconAnchor = L.point(options.iconAnchor)
         }
-        if (!options.popupAnchor) {
+        if (options.popupAnchor == null) {
             options.popupAnchor = L.point(0, (-0.75)*(options.iconSize.y))
         }
         else {
@@ -198,3 +198,5 @@ L.Marker.SVGMarker = L.Marker.extend({
 L.marker.svgMarker = function(latlng, options) {
     return new L.Marker.SVGMarker(latlng, options)
 }
+
+export default L;
